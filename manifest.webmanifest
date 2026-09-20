@@ -1,15 +1,15 @@
 {
-  "id": "/control/",
+  "id": ".",
   "name": "CONTROL Urology Scientific Symposium",
   "short_name": "CONTROL Istanbul",
-  "start_url": "/control/",
-  "scope": "/control/",
+  "start_url": "./",
+  "scope": "./",
   "display": "standalone",
   "theme_color": "#4ab8cd",
   "background_color": "#eefbff",
   "icons": [
     {
-      "src": "/control/manus-storage/control-event-logo.png",
+      "src": "./manus-storage/control-event-logo.png",
       "sizes": "any",
       "type": "image/png",
       "purpose": "any"

@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <base href="./" />
     <meta name="theme-color" content="#4ab8cd" />
     <meta name="description" content="CONTROL Urology Scientific Symposium — Istanbul 2026." />
     <meta property="og:type" content="website" />
@@ -22,7 +23,8 @@
       (function () {
         var route = new URLSearchParams(window.location.search).get("route");
         if (route) {
-          history.replaceState(null, "", "/control" + route);
+          var siteBase = window.location.pathname.replace(/\/$/, "");
+          history.replaceState(null, "", siteBase + route);
         }
       })();
     </script>

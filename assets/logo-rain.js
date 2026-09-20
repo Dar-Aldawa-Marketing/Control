@@ -24,7 +24,7 @@ for (let index = 0; index < 18; index += 1) {
   drop.style.setProperty("--tilt", `${-4 + (index % 5) * 2}deg`);
   drop.style.setProperty("--scale", `${0.72 + (index % 4) * 0.1}`);
 
-  image.src = `/control/assets/logo-rain/${logoName}.png`;
+  image.src = new URL(`assets/logo-rain/${logoName}.png`, document.baseURI).href;
   image.alt = "";
   image.decoding = "async";
   image.loading = "eager";

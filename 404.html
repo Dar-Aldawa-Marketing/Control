@@ -6,7 +6,8 @@
     <title>CONTROL · Urology Scientific Symposium</title>
     <script>
       (function () {
-        var base = "/control";
+        var parts = window.location.pathname.split("/").filter(Boolean);
+        var base = "/" + (parts[0] || "control");
         var route = window.location.pathname.slice(base.length) + window.location.search + window.location.hash;
         window.location.replace(base + "/?route=" + encodeURIComponent(route));
       })();
